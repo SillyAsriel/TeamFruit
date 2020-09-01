@@ -14,3 +14,27 @@ nrasp{
 
   color: #000A12;
 }
+
+td{
+  font-size: 10px;
+  line-height: 1.3em;
+  background: #FFF;
+  color: #747474;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #DBDBDB;
+  vertical-align: top;
+}
+
+td.week, td.time, td.zan, td.day{ 
+  text-align: center;
+}
+
+td.day{
+  width: 12em;
+}
+
+
+/*td, tr, tbody, table{
+  border: 1px solid black;
+}*/
