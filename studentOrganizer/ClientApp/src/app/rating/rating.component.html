@@ -1,7 +1,19 @@
-<h2><button (click)="getRating()">Click</button><h2>
-    <div *ngFor="let item of rating">
-    <h2>{{item.subjectName}}</h2> 
-    <h2>{{item.type}}</h2>
-    <h2>{{item.finalScore}}</h2>
-  </div>
-
+<div class="telo rating">
+	<button (click)="getRating()">Click</button>
+	<table>
+		<tr>
+			<td class="Name">Предмет</td>
+			<td class="Type">Тип</td>
+			<td class="Score">Балл</td>
+		</tr>
+	</table>
+	<table>
+	<div *ngFor="let item of rating">
+	    	<tr>
+		    	<td class="Name">{{item.subjectName}}</td> 
+			    <td class="Type">{{item.type}}</td>
+			    <td class="Score">{{item.finalScore}}</td>
+			</tr>
+	</div>
+	</table>
+</div>
