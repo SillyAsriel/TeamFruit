@@ -19,7 +19,7 @@ namespace studentOrganizer
                 html.LoadHtml(response);
                 var nodeCollection = html.DocumentNode.SelectNodes("//tr");
 
-                foreach (var node in nodeCollection)
+                foreach (var node in    nodeCollection)
                 {
                     //var childNodes = node.ChildNodes;
                     var childNodeArr = node.ChildNodes.ToArray();

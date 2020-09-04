@@ -1,4 +1,9 @@
 <div class="telo rating">
+
+	<label for="input-studnum">Номер студенческого билета</label><br>
+	<input id="input-studnum" placeholder="Номер студенческого билета" type="string" [(ngModel)]="studnum"/><br>
+	<label for="input-paspnum">Номер паспорта</label><br>
+	<input id="input-paspnum" placeholder="Номер паспорта" type="string" [(ngModel)]="paspnum"/><br>
 	<button (click)="getRating()">Click</button>
 	<table>
 		<tr>
@@ -8,8 +13,9 @@
 		</tr>
 	</table>
 	<table>
-	<div *ngFor="let item of rating">
+	<div *ngFor="let item of rating | reverse">
 	    	<tr>
+	    		<td class="Semester">{{item.semester}}</td>
 		    	<td class="Name">{{item.subjectName}}</td> 
 			    <td class="Type">{{item.type}}</td>
 			    <td class="Score">{{item.finalScore}}</td>

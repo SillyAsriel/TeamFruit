@@ -28,6 +28,17 @@ tr{
 	width: 28em;
 }
 
+td{
+  font-size: 10px;
+  line-height: 1.3em;
+  background: #FFF;
+  color: #747474;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #DBDBDB;
+  vertical-align: top;
+}
+
 .Name, .Type, .Score{
 	border: 1px solid #cccccc;
 	height: auto;
